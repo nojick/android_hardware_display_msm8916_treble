@@ -44,6 +44,7 @@ LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdmemalloc\"
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps) $(kernel_deps)
 LOCAL_SRC_FILES               := ionalloc.cpp alloc_controller.cpp
 LOCAL_COPY_HEADERS            := alloc_controller.h memalloc.h
+LOCAL_USE_VNDK		      := true
 
 ifeq ($(TARGET_USE_COMPAT_GRALLOC_ALIGN),true)
 LOCAL_CFLAGS += -DDISABLE_GET_PIXEL_ALIGNMENT
