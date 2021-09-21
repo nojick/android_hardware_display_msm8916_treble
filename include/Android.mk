@@ -11,7 +11,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := display_headers
 LOCAL_EXPORT_C_INCLUDE_DIRS   := $(display_top)/libcopybit \
                                  $(display_top)/libqdutils \
-                                 $(display_top)/libqservice \
+                                 $(display_top)/libqservice
 
 ifeq ($(TARGET_USES_GRALLOC1), true)
     LOCAL_EXPORT_C_INCLUDE_DIRS += $(display_top)/libgralloc1
