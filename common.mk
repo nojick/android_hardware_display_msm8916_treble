@@ -19,7 +19,7 @@ endif
 common_header_export_path := qcom/display
 
 #Common libraries external to display HAL
-common_libs := liblog libutils libcutils libhardware
+common_libs := liblog libutils libcutils libhardware libEGL
 
 #Common C flags
 common_flags := -DDEBUG_CALC_FPS -Wno-missing-field-initializers
@@ -52,12 +52,6 @@ endif
 
 common_deps  :=
 kernel_includes :=
-
-# Executed only on QCOM BSPs
-ifeq ($(TARGET_USES_QCOM_BSP),true)
-# Enable QCOM Display features
-    common_flags += -DQTI_BSP
-endif
 
 common_flags += -isystem $(TARGET_OUT_HEADERS)/qcom/display
 
