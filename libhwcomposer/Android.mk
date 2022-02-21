@@ -16,7 +16,7 @@ LOCAL_C_INCLUDES              += $(TARGET_OUT_HEADERS)/qdcm/inc \
                                  $(TARGET_OUT_HEADERS)/pp/inc
 endif
 
-LOCAL_SHARED_LIBRARIES        := $(common_libs) libEGL liboverlay \
+LOCAL_SHARED_LIBRARIES        := $(common_libs) liboverlay \
                                  libhdmi libqdutils \
                                  libdl libmemalloc libqservice libsync \
                                  libbinder libbfqio

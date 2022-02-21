@@ -23,7 +23,7 @@
 
 #include <log/log.h>
 #include <cutils/atomic.h>
-#include <EGL/egl.h>
+#include "egl/EGL/egl.h"
 #include <utils/Trace.h>
 #include <sys/ioctl.h>
 #include <overlay.h>

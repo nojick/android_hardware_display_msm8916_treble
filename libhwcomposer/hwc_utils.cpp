@@ -23,7 +23,7 @@
 #include <sys/ioctl.h>
 #include <linux/fb.h>
 #include <binder/IServiceManager.h>
-#include <EGL/egl.h>
+#include "egl/EGL/egl.h"
 #include <cutils/properties.h>
 #include <utils/Trace.h>
 #include <gralloc_priv.h>

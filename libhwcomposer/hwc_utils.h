@@ -35,7 +35,7 @@
 #include "mdp_version.h"
 #include <overlayUtils.h>
 #include <overlayRotator.h>
-#include <EGL/egl.h>
+#include "egl/EGL/egl.h"
 
 
 #define ALIGN_TO(x, align)     (((x) + ((align)-1)) & ~((align)-1))
